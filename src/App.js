@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import AboutMe from "./Components/About-me";
+import Contact from "./Components/Contact";
+import Hero from "./Components/Hero";
+import MyWork from "./Components/MyWork";
+import Nav from "./Components/Nav";
+import { Sling as Hamburger } from "hamburger-react";
 
 function App() {
+  const [menuToggle, setMenuToggle] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="hamburger">
+        <div className="logo">
+          <img src={require("./Images/logo_invert.png")} alt="" />
+          <p>Iustin Ionita</p>
+        </div>
+        <Hamburger
+          onToggle={() => {
+            setMenuToggle(!menuToggle);
+          }}
+        />
+      </div>
+      <Nav toggle={menuToggle} />
+      <Hero />
+      <AboutMe />
+      <MyWork />
+      <Contact />
     </div>
   );
 }

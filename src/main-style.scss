@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+$bg: #19181e;
+// $bg: #1d1d2d;
+$bg2: #262626;
+$btn: #cbb080;
+// $btn: #27f7b9;
+$focus: #dec79b;
+// $focus: #20c997;
+$text: #dadcdd;
+$subtext: #bfbfbf;
+$border: #38373f;
+$handwriting: "Caveat", cursive;
+$transition: all 0.3s ease;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // font-family: "Spectral", serif;
+  font-family: "Poppins", sans-serif;
+  color: $text;
+  scroll-behavior: smooth;
+}
+
+#hamburger {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid $border;
+  @include flex(space-between, center);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $bg;
+    opacity: 0.95;
+    z-index: -1;
+    // filter: blur(10px);
+  }
+  .logo {
+    @include flex(center, center);
+    img {
+      width: 70px;
+    }
+    p {
+      font-family: $handwriting;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  opacity: 0;
+  transition: $transition;
+  pointer-events: none;
+  z-index: 2;
+  ul {
+    background: $bg2;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    list-style: none;
+    li {
+      width: 50px;
+      height: 50px;
+      font-size: 1.3rem;
+      transition: $transition;
+      @include flex(center, center);
+      span {
+        display: none;
+      }
+      &:hover {
+        background: $focus;
+        i {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background: $bg;
+  transition: background 0.2s linear;
+}
+
+.body-bg {
+  background: rgb(245, 101, 90);
+}
+
+button {
+  background: transparent;
+  border: 2px solid $focus !important;
+  color: $focus;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  transition: $transition;
+  &:hover {
+    background: $focus;
+    color: white;
+  }
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+  // min-height: 100vh;
+  height: fit-content;
+  padding: 50px 20px;
+  overflow-x: hidden;
+}
+
+.main-container-top {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.img-border {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  border-top-left-radius: 5px;
+  border-left: 5px solid $focus;
+  border-top: 5px solid $focus;
+  transition: $transition;
+}
+
+.title {
+  width: fit-content;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  color: $focus;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-top: 3px solid $focus;
+    border-left: 3px solid $focus;
+    border-top-left-radius: 5px;
+    width: 50%;
+    height: 50%;
+    transition: all 0.3s ease;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: -10px;
+    border-bottom: 3px solid $focus;
+    border-right: 3px solid $focus;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+    height: 50%;
+    transition: $transition;
+  }
+  &:hover::before,
+  &:hover::after {
+    width: 80%;
+  }
+
+  span.title-frame {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    font-size: 2rem;
+    white-space: nowrap;
+    z-index: -1;
+    color: $focus;
+    opacity: 0.15;
+    transition: $transition;
+  }
+
+  &:hover .title-frame {
+    left: 45%;
+  }
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  color: $subtext;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.hero {
+  @include flex(center, center); // (center, flex-start) for desktop
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./Images/background.svg");
+  text-align: center;
+  p {
+    // display: none;
+    font-family: $handwriting;
+    font-size: 1.5rem;
+  }
+  h1 {
+    strong {
+      width: 100%;
+      font-family: $handwriting;
+      display: inline-block;
+      font-size: 4.5rem;
+    }
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+  }
+  span {
+    font-family: $handwriting;
+    font-size: 2rem;
+  }
+  img {
+    height: 300px;
+    display: none; // desktop only
+  }
+}
+
+.about-me {
+  .d-wrapper {
+    @include flex(center, center);
+    flex-direction: column;
+  }
+  .profile-photo {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    img {
+      width: 300px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    &:hover .img-border {
+      width: 95%;
+      height: 95%;
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    max-width: 700px;
+    span {
+      color: $focus;
+      font-weight: 700;
+    }
+  }
+  .cta {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.my-work {
+  .d-wrapper {
+    @include flex(center, center);
+    flex-direction: column;
+    margin: auto;
+    // border: 1px solid red;
+  }
+}
+
+.project {
+  max-width: 370px;
+  border: 1px solid red;
+  margin: 5px;
+  @include flex(center, center);
+  flex-direction: column;
+  border: 2px solid $border;
+  border-radius: 5px;
+  transition: $transition;
+  &:hover {
+    box-shadow: 0px 0px 3px 2px $border;
+    .p-img {
+      background: #1f1f23;
+    }
+  }
+  .p-img {
+    width: 100%;
+    height: 250px;
+    // background: #1f1f23;
+    border-bottom: 1px solid $border;
+    object-fit: contain;
+    transition: $transition;
+  }
+  .p-body {
+    @include flex(center, center);
+    flex-direction: column;
+    .p-title {
+      font-size: 2.5rem;
+      color: $focus;
+      opacity: 0.8;
+    }
+    .p-tech {
+      @include flex(center, center);
+      gap: 5px;
+      span {
+        border: 2px solid $border;
+        padding: 3px 7px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-family: $handwriting;
+      }
+    }
+  }
+  .p-content {
+    p {
+      color: $subtext;
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+    .p-cta {
+      text-align: center;
+      a {
+        display: inline-block;
+        width: 50%;
+        padding: 5px 0;
+        border-top: 2px solid $border;
+        // background: red;
+        text-decoration: none;
+        transition: $transition;
+        i {
+          transition: $transition;
+        }
+        &:nth-child(1) {
+          border-bottom-left-radius: 3px;
+          border-right: 1px solid $border;
+          &:hover {
+            color: #6e5494;
+            i {
+              color: #6e5494;
+            }
+          }
+        }
+        &:nth-child(2) {
+          border-bottom-right-radius: 3px;
+          border-left: 1px solid $border;
+          &:hover {
+            color: #5aa839;
+            i {
+              color: #5aa839;
+            }
+          }
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  @include flex(center, center);
+  flex-direction: column;
+  background: #1f1f23;
+  border-top: 1px solid $border;
+  form {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    max-width: 370px;
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid $border;
+      border-radius: 5px;
+      background: transparent;
+      padding: 5px;
+      outline: none;
+      transition: $transition;
+      &::placeholder {
+        color: $subtext;
+        opacity: 0.3;
+      }
+      &:focus {
+        border: 1px solid $focus;
+        transform: scale(1.02);
+      }
+    }
+  }
+  .socials {
+    margin-top: 20px;
+    ul {
+      list-style: none;
+      @include flex(center, center);
+      gap: 15px;
+      li {
+        transition: $transition;
+        i {
+          font-size: 2.3rem;
+        }
+        &:hover {
+          transform: translateY(-5px);
+          i {
+            color: $focus;
+          }
+        }
+      }
+    }
+  }
+}
