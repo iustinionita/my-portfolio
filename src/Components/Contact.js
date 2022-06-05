@@ -25,7 +25,7 @@ function Contact() {
         (error) => {
           //error
           alert(
-            "Sorry, there's a technical error. Please contact me on social media!"
+            "Sorry, there's a technical error. Please email me: ionita.iustin@gmail.com"
           );
         }
       );
@@ -34,66 +34,75 @@ function Contact() {
   return (
     <div className="contact main-container" id="contact">
       <div className="main-container-top">
-      <h2 className="title">&lt; contact-me /&gt;</h2>
-      <h4 className="subtitle">Have a question or want to work together?</h4>
+        <h2 className="title">&lt; contact-me /&gt;</h2>
+        <h4 className="subtitle">Have a question or want to work together?</h4>
       </div>
-      <form onSubmit={sendEmail}>
-        <input
-          type="text"
-          name="name"
-          id="c-subject"
-          autoComplete="off"
-          placeholder="Name"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          id="c-email"
-          autoComplete="off"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          name="message"
-          id="c-message"
-          cols="40"
-          rows="6"
-          placeholder="Message"
-          required
-        ></textarea>
-        <input type="submit" value="Send" ref={send} />
-      </form>
-      <div className="socials">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/don.iustin"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i className="fa-brands fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/iustin_94"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i className="fa-brands fa-twitter-square"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/iustinionita"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i className="fa-brands fa-github-square"></i>
-            </a>
-          </li>
-        </ul>
+      <div className="d-wrapper">
+        <div className="contact-details">
+          <ul>
+            <li><a href="https://goo.gl/maps/uuUuiRy7fEKRWe58A" target='_blank' rel="noreferrer"><i className="fa-solid fa-location-dot"></i>8 Northville Road, Filton, Bristol, BS7 0RG</a></li>
+            <li onClick={() => window.open("mailto:ionita.iustin@gmail.com?subject=Let's%20have%20a%20chat!")}><i className="fa-solid fa-envelope"></i>ionita.iustin@gmail.com</li>
+            <li><i className="fa-solid fa-phone"></i>0790 284 3634</li>
+          </ul>
+          <div className="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/don.iustin"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/iustin_94"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/iustinionita"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-github-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            id="c-subject"
+            placeholder="Name"
+            autoComplete="off"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="c-email"
+            autoComplete="off"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="c-message"
+            cols="40"
+            rows="6"
+            placeholder="Message"
+            required
+          ></textarea>
+          <input type="submit" value="Send" ref={send} />
+        </form>
       </div>
     </div>
   );

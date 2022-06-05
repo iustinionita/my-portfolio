@@ -25,10 +25,10 @@
           background: transparent;
           cursor: pointer;
           i {
-            color: #dec79b;
+            color: #09a792;
           }
           span {
-            color: #dec79b;
+            color: #09a792;
           }
         }
         span {
@@ -50,11 +50,11 @@
       width: fit-content;
       margin: 50px auto;
       gap: 50px;
-      // .about-me-content {
-      //   .cta {
-      //     text-align: left;
-      //   }
-      // }
+      .about-me-content {
+        .cta {
+          text-align: left;
+        }
+      }
     }
   }
 
