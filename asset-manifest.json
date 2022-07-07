@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/iustinionita/my-portofolio/static/css/main.6cb84b11.css",
+    "main.js": "/iustinionita/my-portofolio/static/js/main.f266ffe7.js",
+    "static/js/787.fca47ae2.chunk.js": "/iustinionita/my-portofolio/static/js/787.fca47ae2.chunk.js",
+    "static/media/profile_photo.jpeg": "/iustinionita/my-portofolio/static/media/profile_photo.da75fb3b7115867ae860.jpeg",
+    "static/media/safulock_lock.png": "/iustinionita/my-portofolio/static/media/safulock_lock.776f2978217ab6153189.png",
+    "static/media/safulock_pres.png": "/iustinionita/my-portofolio/static/media/safulock_pres.af2c1a3abab0d59cebdf.png",
+    "static/media/air_pollution.png": "/iustinionita/my-portofolio/static/media/air_pollution.3a63cdf2162a8d213886.png",
+    "static/media/nftminter.png": "/iustinionita/my-portofolio/static/media/nftminter.7044f2558c72076e39e9.png",
+    "static/media/dex.png": "/iustinionita/my-portofolio/static/media/dex.f8f5354999a70c23b39a.png",
+    "static/media/qr.png": "/iustinionita/my-portofolio/static/media/qr.616ddc9199392224c0fe.png",
+    "static/media/logo_invert.png": "/iustinionita/my-portofolio/static/media/logo_invert.c7e4d60d256510813f40.png",
+    "static/media/background.svg": "/iustinionita/my-portofolio/static/media/background.72a142c91c06322d9aab.svg",
+    "index.html": "/iustinionita/my-portofolio/index.html",
+    "main.6cb84b11.css.map": "/iustinionita/my-portofolio/static/css/main.6cb84b11.css.map",
+    "main.f266ffe7.js.map": "/iustinionita/my-portofolio/static/js/main.f266ffe7.js.map",
+    "787.fca47ae2.chunk.js.map": "/iustinionita/my-portofolio/static/js/787.fca47ae2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cb84b11.css",
+    "static/js/main.f266ffe7.js"
+  ]
+}
