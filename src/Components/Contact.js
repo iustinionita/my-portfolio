@@ -40,9 +40,28 @@ function Contact() {
       <div className="d-wrapper">
         <div className="contact-details">
           <ul>
-            <li><a href="https://goo.gl/maps/uuUuiRy7fEKRWe58A" target='_blank' rel="noreferrer"><i className="fa-solid fa-location-dot"></i>8 Northville Road, Filton, Bristol, BS7 0RG</a></li>
-            <li onClick={() => window.open("mailto:ionita.iustin@gmail.com?subject=Let's%20have%20a%20chat!")}><i className="fa-solid fa-envelope"></i>ionita.iustin@gmail.com</li>
-            <li><i className="fa-solid fa-phone"></i>0790 284 3634</li>
+            <li>
+              <a
+                href="https://goo.gl/maps/uuUuiRy7fEKRWe58A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-solid fa-location-dot"></i>8 Northville Road,
+                Filton, Bristol, BS7 0RG
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                window.open(
+                  "mailto:ionita.iustin@gmail.com?subject=Let's%20have%20a%20chat!"
+                )
+              }
+            >
+              <i className="fa-solid fa-envelope"></i>ionita.iustin@gmail.com
+            </li>
+            <li>
+              <i className="fa-solid fa-phone"></i>0790 284 3634
+            </li>
           </ul>
           <div className="socials">
             <ul>

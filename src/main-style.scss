@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 $bg: #19181e;
-// $bg: #1d1d2d;
 $bg2: #262626;
-$btn: #07685b;
-// $btn: #27f7b9;
-// $focus: #dec79b;
-$focus: #09a792;
+// $btn: #eaa327;
+$btn: #93c814;
+// $focus: #93C814;
+$focus: #93c814;
 $text: #dadcdd;
 $subtext: #bfbfbf;
 $border: #38373f;
@@ -26,7 +26,8 @@ $transition: all 0.3s ease;
   margin: 0;
   box-sizing: border-box;
   // font-family: "Spectral", serif;
-  font-family: "Poppins", sans-serif;
+  // font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: $text;
   scroll-behavior: smooth;
 }
@@ -160,7 +161,7 @@ button {
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -10px;
+    left: -15px;
     border-top: 3px solid $focus;
     border-left: 3px solid $focus;
     border-top-left-radius: 5px;
@@ -172,8 +173,8 @@ button {
     content: "";
     display: inline-block;
     position: absolute;
-    bottom: 5px;
-    right: -10px;
+    bottom: 0px;
+    right: -15px;
     border-bottom: 3px solid $focus;
     border-right: 3px solid $focus;
     border-bottom-right-radius: 5px;
@@ -191,10 +192,11 @@ button {
     bottom: 60%;
     left: 50%;
     font-size: 2rem;
+    font-family: $handwriting;
     white-space: nowrap;
     z-index: -1;
     color: $focus;
-    opacity: 0.15;
+    opacity: 0.4;
     transition: $transition;
   }
 
@@ -208,6 +210,7 @@ button {
   color: $subtext;
   text-align: center;
   font-weight: 300;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -255,7 +258,7 @@ button {
       width: 300px;
       margin-bottom: 15px;
       border-radius: 5px;
-      filter: brightness(.9);
+      filter: brightness(0.9);
     }
     &:hover .img-border {
       width: 95%;
@@ -314,7 +317,8 @@ button {
     .p-title {
       font-size: 2rem;
       color: $focus;
-      opacity: 0.8;
+      margin: 15px 0;
+      // opacity: 0.8;
     }
     .p-tech {
       @include flex(center, center);
@@ -329,10 +333,16 @@ button {
     }
   }
   .p-content {
+    margin-top: 10px;
     p {
+      height: 88px;
       color: $subtext;
       padding: 10px;
       font-size: 0.8rem;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
     }
     .p-cta {
       text-align: center;

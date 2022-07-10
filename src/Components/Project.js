@@ -1,17 +1,8 @@
 import { useRef } from "react";
-// import useParallax from "./useParallax";
 
 function Project(props) {
-  const { title, description, img, github, live, tech } = props;
+  const { title, description, img, github, live, tech, cta } = props;
   const imgElem = useRef();
-  // const [screenWidth, setScreenWidth] = useState();
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", () => {
-  //     setScreenWidth(window.screen.width);
-  //   });
-  // }, []);
-
   return (
     <div className="project">
       <img src={img} className="p-img" alt={img} ref={imgElem} />
@@ -23,14 +14,11 @@ function Project(props) {
           ))}
         </h5>
         <div className="p-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            pariatur dolorem illo vitae numquam facere, modi nemo id omnis non?
-          </p>
+          <p>{description}</p>
           <div className="p-cta">
             <a
               href={github}
-              className="github"
+              style={cta === "hide" ? { width: "100%" } : { width: "50%" }}
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() =>
@@ -42,7 +30,9 @@ function Project(props) {
             </a>
             <a
               href={live}
-              className="github"
+              style={
+                cta === "hide" ? { display: "none" } : { display: "inline-block" }
+              }
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() =>

@@ -4,7 +4,6 @@ function useParallax() {
   const parallax = () => {
     const elements = document.querySelectorAll(".parallax");
     const scrollY = window.pageYOffset;
-    console.log(scrollY);
     elements.forEach((element) => {
       const startPoint = element.dataset.start;
       const endPoint = element.dataset.end;

@@ -22,57 +22,51 @@ function MyWork() {
         <Project
           title="NFT Minter"
           img={require("../Images/nftminter.png")}
+          description="Easy to use app that allows you to mint NFTs on Binance Smart Chain in 3 easy steps. Upload your image, set a title and a description and click MINT. All you need is MetaMask and some BNB to pay for the fees."
           github="https://github.com/iustinionita/nft-minter"
           live="https://github.com/iustinionita/nft-minter"
           tech={["HTML", "SCSS", "React", "JavaScript", "Web3"]}
-          // rate="-0.1"
-          // start="1200"
-          // end="1600"
-          // direction="horizontal"
         />
         <Project
           title="Presentation"
           img={require("../Images/safulock_pres.png")}
+          description="This is the presentation Website for my Crypto Locker App. Find out what this project is all about, how does it work and check the Roadmap to see what's coming up. You can also see the latest transactions and locks from the smart contract in a easy-to-read way. (Please bear in mind this is not a geniune project, it's simply built for fun)"
           github="https://safu-lock.com/"
           live="https://safu-lock.com/"
           tech={["HTML", "SCSS", "JavaScript"]}
-          // rate="-0.1"
-          // start="1400"
-          // end="1800"
-          // direction="horizontal"
         />
         <Project
-          title="Crypto App"
+          title="Crypto Locker App"
           img={require("../Images/safulock_lock.png")}
+          description="This app will allow you to lock any crypto token from Binance Smart Chain into a smart contract for a defined period of time. Are you a crypto project CEO? Proove to your community that you can be trusted by showing them your funds are locked - you choose for how long - and you're not running away with their money. Or are you simply looking to hold your tokens for a day, a month or, why not, few years? I'll take care of them, just come back at the agreed date and claim everything back. (Please bear in mind this is not a geniune project, it's simply built for fun)"
           github="https://safu-lock.com/"
           live="https://safu-lock.com/"
           tech={["HTML", "SCSS", "JavaScript", "Web3", "Solidity"]}
-          // rate="-0.1"
-          // start="1600"
-          // end="2000"
-          // direction="horizontal"
-        />
-        <Project
-          title="Dex App"
-          img={require("../Images/dex.png")}
-          github="https://safu-lock.com/"
-          live="https://safu-lock.com/"
-          tech={["JavaScript", "Node JS", "Web3", "Docker"]}
-          // rate="-0.1"
-          // start="1800"
-          // end="2200"
-          // direction="horizontal"
         />
         <Project
           title="Air Quality"
           img={require("../Images/air_pollution.png")}
+          description="Check the air quality in your area by searching for your location. Find the NO₂, O₃, PM10 and PM2.5 levels or, if you don't want anything more than a simple rating for the air quality this app will rate the air pollution level from Very Poor to Good."
           github="https://safu-lock.com/"
           live="https://safu-lock.com/"
           tech={["HTML", "SCSS", "React", "JavaScript", "Express"]}
-          // rate="-0.1"
-          // start="2000"
-          // end="2400"
-          // direction="horizontal"
+        />
+        <Project
+          title="Dex App"
+          img={require("../Images/dex.png")}
+          description="A NodeJS app that will set a Limit Order on PancakeSwap Decentralized Exchange so you won't miss a trade again. It's really easy to use, just start the script, input all the necessary information and the app will do the rest for you. Aw, by the way, you can use Docker for a smoother experience."
+          github="https://safu-lock.com/"
+          live="https://safu-lock.com/"
+          tech={["JavaScript", "Node JS", "Web3", "Docker"]}
+        />
+        <Project
+          title="My Portofolio"
+          img={require("../Images/my_cv.png")}
+          description="You're already looking at it! I tought that a CV without any projects I've done may not be enough so this Website will give you a brief idea of the things I can currently do. But this is just the beginning, mark my words!"
+          github="#"
+          live="#"
+          tech={["HTML", "SCSS", "JavaScript", "React"]}
+          cta="hide"
         />
       </div>
     </div>
@@ -80,6 +74,3 @@ function MyWork() {
 }
 
 export default MyWork;
-
-// onMouseOver={() => document.querySelector("body").classList.add("body-bg")}
-// onMouseLeave={() => document.querySelector("body").classList.remove("body-bg")}
