@@ -29,19 +29,3 @@ function useParallax() {
 }
 
 export default useParallax;
-
-// CODE FOR IN-COMPONENT DECLARED FUNCTION
-
-// const parallax = () => {
-//   const elements = document.querySelectorAll(".parallax");
-//   elements.forEach((element) => {
-//     element.style.cssText = `transform: translateY(${window.pageYOffset * element.dataset.rate}px)`;
-//     console.log(`${window.pageYOffset * element.dataset.rate}px`);
-//   });
-// }
-
-// useEffect(() => {
-//   window.addEventListener("scroll", useParallax);
-
-//   return () => window.removeEventListener("scroll", useParallax);
-// }, []);

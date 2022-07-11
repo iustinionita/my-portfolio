@@ -1,7 +1,4 @@
-// import useParallax from "./useParallax";
-
 function AboutMe() {
-  // useParallax();
   return (
     <div className="about-me main-container">
       <div className="main-container-top">
@@ -32,8 +29,8 @@ function AboutMe() {
             Hi there! My name is Iustin and{" "}
             <span>I enjoy creating things that live on the interet.</span>{" "}
             <br /> <br /> My interest in Front End Development started back in
-            2011 when <span>I made my first website for a game server</span>{" "}
-            - this tought me a lot about HTML and CSS! <br />
+            2011 when <span>I made my first website for a game server</span> -
+            this tought me a lot about HTML and CSS! <br />
             <br /> Fast-forward to today, after the experience I've had creating{" "}
             <span>my first crypto-token</span> and launching it live on the
             main-net with an{" "}
@@ -44,14 +41,7 @@ function AboutMe() {
             entire project.
           </p>
           <div className="cta">
-            <button
-              // className="parallax"
-              // data-rate="0.07"
-              // data-start="1200"
-              // data-direction="vertical"
-            >
-              Download My CV
-            </button>
+            <button>Download My CV</button>
           </div>
         </div>
       </div>

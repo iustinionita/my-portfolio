@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
@@ -41,7 +42,9 @@ function Hero() {
             }}
           />
         </h1>
-        <button className="cta">Hire me</button>
+        <Link to="contact">
+          <button className="cta">Let's work together</button>
+        </Link>
       </div>
       <img src={require("../Images/qr.png")} alt="" />
     </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './main-style.css';
 import './main-style.scss';
 import './min576.scss';
 import './min768.scss';

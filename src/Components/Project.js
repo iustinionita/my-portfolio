@@ -18,7 +18,7 @@ function Project(props) {
           <div className="p-cta">
             <a
               href={github}
-              style={cta === "hide" ? { width: "100%" } : { width: "50%" }}
+              style={cta === "mono" ? { width: "100%", borderRight: "0" } : { width: "50%" }}
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() =>
@@ -31,7 +31,7 @@ function Project(props) {
             <a
               href={live}
               style={
-                cta === "hide" ? { display: "none" } : { display: "inline-block" }
+                cta === "mono" ? { display: "none" } : { display: "inline-block" }
               }
               target="_blank"
               rel="noreferrer"
