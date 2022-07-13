@@ -48,7 +48,7 @@ function MyWork() {
           img={require("../Images/air_pollution.png")}
           description="Check the air quality in your area by searching for your location. Find the NO₂, O₃, PM10 and PM2.5 levels or, if you don't want anything more than a simple rating for the air quality this app will rate the air pollution level from Very Poor to Good."
           github="https://github.com/iustinionita/air-quality-web"
-          live="https://iustinionita.github.io/air-quality-web/"
+          live="http://air-pollution.ddns.net/"
           tech={["HTML", "SCSS", "React", "JavaScript", "Express"]}
         />
         <Project
