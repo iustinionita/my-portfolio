@@ -26,16 +26,17 @@ function AboutMe() {
         </div>
         <div className="about-me-content">
           <p>
-            Hi there! My name is Iustin and{" "}
-            <span>I enjoy creating things that live on the interet.</span>{" "}
+            Hi there! My name is Iustin and
+            <span> I enjoy creating things that live on the internet.</span>
             <br /> <br /> My interest in Front End Development started back in
-            2011 when <span>I made my first website for a game server</span> -
-            this tought me a lot about HTML and CSS! <br />
-            <br /> Fast-forward to today, after the experience I've had creating{" "}
-            <span>my first crypto-token</span> and launching it live on the
-            main-net with an{" "}
-            <span>initial liquidity of $24k raised in the first 8 minutes</span>{" "}
-            of the presale phase I can proudly say that I understood the power
+            2011 when
+            <span> I made my first website for a game server</span> - this
+            thought me a lot about HTML and CSS! <br />
+            <br /> Fast-forward to today, after the experience I've had creating
+            <span> my first crypto-token</span> and launching it live on the
+            main-net with an <span>
+              initial liquidity of $24k raised in the first 8 minutes
+            </span> of the presale phase I can proudly say that I understood the power
             of <span>HTML, CSS and JavaScript</span> as the basic presentation
             website I've done for this crypto-token represented 90% of the
             entire project.
