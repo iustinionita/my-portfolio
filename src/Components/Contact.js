@@ -123,6 +123,7 @@ function Contact() {
           <input type="submit" value="Send" ref={send} />
         </form>
       </div>
+      <p>Made with ❤️ by Iustin Ionita - {new Date().getFullYear()}</p>
     </div>
   );
 }

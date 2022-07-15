@@ -38,7 +38,7 @@ function AboutMe() {
               initial liquidity of $24k raised in the first 8 minutes
             </span> of the presale phase I can proudly say that I understood the power
             of <span>HTML, CSS and JavaScript</span> as the basic presentation
-            website I've done for this crypto-token represented 90% of the
+            website I've made for this crypto-token represented 90% of the
             entire project.
           </p>
           <div className="cta">
