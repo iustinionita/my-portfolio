@@ -34,15 +34,20 @@ function AboutMe() {
             thought me a lot about HTML and CSS! <br />
             <br /> Fast-forward to today, after the experience I've had creating
             <span> my first crypto-token</span> and launching it live on the
-            main-net with an <span>
-              initial liquidity of $24k raised in the first 8 minutes
-            </span> of the presale phase I can proudly say that I understood the power
+            main-net with an{" "}
+            <span>initial liquidity of $24k raised in the first 8 minutes</span>{" "}
+            of the presale phase I can proudly say that I understood the power
             of <span>HTML, CSS and JavaScript</span> as the basic presentation
             website I've made for this crypto-token represented 90% of the
             entire project.
           </p>
           <div className="cta">
-            <button>Download My CV</button>
+            <a
+              href={require("../Download/Iustin_Ionita - Front-end Developer.pdf")}
+              download
+            >
+              <button>Download My CV</button>
+            </a>
           </div>
         </div>
       </div>

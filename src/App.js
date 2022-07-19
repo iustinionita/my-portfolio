@@ -4,7 +4,7 @@ import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import MyWork from "./Components/MyWork";
 import Nav from "./Components/Nav";
-import { Sling as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 
 function App() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -21,7 +21,7 @@ function App() {
           }}
         />
       </div>
-      <Nav toggle={menuToggle} />
+      <Nav toggle={menuToggle}/>
       <Hero />
       <AboutMe />
       <MyWork />
