@@ -60,27 +60,18 @@ function Contact() {
               <i className="fa-solid fa-envelope"></i>ionita.iustin@gmail.com
             </li>
             <li>
-              <i className="fa-solid fa-phone"></i>0790 284 3634
+              <i className="fa-solid fa-phone"></i><a href="tel:07902843634">0790 284 3634</a>
             </li>
           </ul>
           <div className="socials">
             <ul>
               <li>
                 <a
-                  href="https://www.facebook.com/don.iustin"
+                  href="https://www.linkedin.com/in/iustinionita/"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <i className="fa-brands fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/iustin_94"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-twitter-square"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
               </li>
               <li>
