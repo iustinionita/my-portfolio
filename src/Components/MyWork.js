@@ -20,10 +20,10 @@ function MyWork() {
       </div>
       <div className="d-wrapper">
         {/* <Project
-          title="My Portofolio"
+          title="My Portfolio"
           img={require("../Images/my_cv.png")}
           description="You're already looking at it! I thought that a CV without any projects I've done may not be enough, so this Website will give you a brief idea of the things I can currently do. But this is just the beginning, mark my words!"
-          github="https://github.com/iustinionita/my-portofolio"
+          github="https://github.com/iustinionita/my-portfolio"
           live="#"
           tech={["HTML", "SCSS", "JavaScript", "React"]}
           cta="mono"
@@ -53,7 +53,7 @@ function MyWork() {
           tech={["HTML", "SCSS", "JavaScript", "React", "Express"]}
         />
         <Project
-          title="Presentation"
+          title="Crypto Project"
           img={require("../Images/safulock_pres.png")}
           description="This is the presentation Website for my Crypto Locker App. Find out what this project is all about and how does it work, or use the Locker App to secure your tokens for as long as you want."
           github="https://github.com/iustinionita/safu-lock"
