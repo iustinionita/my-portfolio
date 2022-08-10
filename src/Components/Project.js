@@ -22,7 +22,7 @@ function Project(props) {
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() =>
-                (imgElem.current.style.background = "#6e5494")
+                (imgElem.current.style.background = "#6e549480")
               }
               onMouseLeave={() => (imgElem.current.style.background = "")}
             >
@@ -36,7 +36,7 @@ function Project(props) {
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() =>
-                (imgElem.current.style.background = "#5aa839")
+                (imgElem.current.style.background = "#5aa839CC")
               }
               onMouseLeave={() => (imgElem.current.style.background = "")}
             >
