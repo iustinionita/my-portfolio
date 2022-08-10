@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.85a6b3c3.css",
-    "main.js": "/my-portfolio/static/js/main.26209b61.js",
+    "main.js": "/my-portfolio/static/js/main.7bd03140.js",
     "static/js/787.fca47ae2.chunk.js": "/my-portfolio/static/js/787.fca47ae2.chunk.js",
     "static/media/profile_photo.jpeg": "/my-portfolio/static/media/profile_photo.da75fb3b7115867ae860.jpeg",
     "static/media/safulock_pres.png": "/my-portfolio/static/media/safulock_pres.af2c1a3abab0d59cebdf.png",
@@ -11,16 +11,16 @@
     "static/media/youtube_mp3.png": "/my-portfolio/static/media/youtube_mp3.4810c665323cb4780323.png",
     "static/media/file_sharing.png": "/my-portfolio/static/media/file_sharing.bab27a14755f8625229e.png",
     "static/media/qr.png": "/my-portfolio/static/media/qr.616ddc9199392224c0fe.png",
-    "static/media/Iustin_Ionita - Front-end Developer.pdf": "/my-portfolio/static/media/Iustin_Ionita - Front-end Developer.b7df5837257ae71f168a.pdf",
+    "static/media/Iustin Ionita - Resume.pdf": "/my-portfolio/static/media/Iustin Ionita - Resume.f098fb7fee10f663c970.pdf",
     "static/media/logo_invert.png": "/my-portfolio/static/media/logo_invert.c7e4d60d256510813f40.png",
     "static/media/background.svg": "/my-portfolio/static/media/background.72a142c91c06322d9aab.svg",
     "index.html": "/my-portfolio/index.html",
     "main.85a6b3c3.css.map": "/my-portfolio/static/css/main.85a6b3c3.css.map",
-    "main.26209b61.js.map": "/my-portfolio/static/js/main.26209b61.js.map",
+    "main.7bd03140.js.map": "/my-portfolio/static/js/main.7bd03140.js.map",
     "787.fca47ae2.chunk.js.map": "/my-portfolio/static/js/787.fca47ae2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85a6b3c3.css",
-    "static/js/main.26209b61.js"
+    "static/js/main.7bd03140.js"
   ]
 }
